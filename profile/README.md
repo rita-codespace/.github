@@ -1,6 +1,7 @@
 # RITA Codespace
 
 RITA Codespace는 수업에서 진행되는 학생 프로젝트를 등록하고 공유하기 위한 GitHub Organization입니다.
+
 학생들은 각자의 Repository에 프로젝트 결과물을 업로드하고, 다른 학생들의 작업을 자유롭게 열람할 수 있습니다.
 
 Organization에 가입할 필요는 없습니다. **GitHub 계정만 있으면** 아래 절차로 본인 전용 Repository를 바로 만들 수 있습니다.
