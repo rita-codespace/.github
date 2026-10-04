@@ -14,8 +14,8 @@ Organization에 가입할 필요는 없습니다. **GitHub 계정만 있으면**
 
 1. 본인의 **GitHub 계정으로 로그인**합니다. 계정이 없다면 [github.com/signup](https://github.com/signup)에서 먼저 만드세요.
 2. 위 **등록 링크**에 접속합니다.
-3. **Project Repository Registration** 양식을 선택하고(New Issue), **프로젝트명**과 **프로젝트 간단 설명**을 적은 뒤 확인란을 체크하고 **Create**를 누릅니다.
-4. 별도 승인 없이 1~2분 안에 본인 전용 Repository `rita-codespace/phase1-<본인 GitHub ID>`가 **자동으로 생성**되고, 결과가 Issue 댓글로 안내됩니다.
+3. **Project Repository Registration** 양식을 선택하고(New Issue), **프로젝트명**, **저장소 이름**(영문 소문자·숫자·하이픈), **프로젝트 간단 설명**을 적은 뒤 확인란을 체크하고 **Create**를 누릅니다.
+4. 별도 승인 없이 1~2분 안에 Repository `rita-codespace/<본인 GitHub ID>-<저장소 이름>`이 **자동으로 생성**되고, 결과가 Issue 댓글로 안내됩니다.
 5. 댓글의 초대 링크(또는 GitHub 알림·이메일)에서 **Collaborator 초대를 수락(Accept invitation)** 합니다.
 6. 생성된 Repository에 본인의 프로젝트를 **업로드**합니다. 방법은 아래 [코드 업로드 방법](#코드-업로드-방법)을 참고하세요.
 
@@ -23,7 +23,7 @@ Organization에 가입할 필요는 없습니다. **GitHub 계정만 있으면**
 <summary>등록 시 자주 묻는 질문</summary>
 
 - **GitHub ID를 입력해야 하나요?** 아니요. Issue를 작성한 계정에서 자동으로 확인합니다. 다른 사람 대신 등록할 수는 없습니다.
-- **여러 번 등록하면 어떻게 되나요?** Repository는 계정당 하나만 유지됩니다. 다시 등록하면 기존 Repository가 안내됩니다.
+- **여러 개 만들 수 있나요?** 네. 프로젝트마다 저장소 이름을 다르게 적어 등록하면 계정당 최대 5개까지 만들 수 있습니다. 같은 이름으로 다시 등록하면 새로 만들지 않고 기존 Repository를 안내합니다.
 - **초대가 만료됐어요.** 초대는 7일 후 만료됩니다. 등록 양식을 다시 제출하면 새 초대가 발송됩니다.
 - **GitHub 아이디를 바꿨어요.** 기존 Repository는 그대로 본인 것으로 인식되며, 다시 등록해도 새로 만들어지지 않습니다.
 - **댓글에 ❌ 오류가 달렸어요.** 관리자가 확인한 뒤 처리합니다. Issue를 지우지 말고 기다려 주세요.
@@ -36,13 +36,13 @@ Organization에 가입할 필요는 없습니다. **GitHub 계정만 있으면**
 
 ```
 rita-codespace/
-├── submissions          ← 등록 접수처 (Issue로 Repository 생성 신청)
-├── phase1-studentA      ← 학생 A의 프로젝트
-├── phase1-studentB      ← 학생 B의 프로젝트
-└── phase1-studentC      ← 학생 C의 프로젝트
+├── submissions             ← 등록 접수처 (Issue로 Repository 생성 신청)
+├── studentA-smart-campus   ← 학생 A의 프로젝트
+├── studentA-chatbot        ← 학생 A의 두 번째 프로젝트
+└── studentB-smart-campus   ← 학생 B의 프로젝트
 ```
 
-- 학생 Repository 이름은 `phase1-<GitHub ID>` 형식으로 자동 지정됩니다.
+- 학생 Repository 이름은 `<GitHub ID>-<저장소 이름>` 형식입니다. 저장소 이름은 등록할 때 직접 정합니다 (영문 소문자·숫자·하이픈, 2~40자).
 - 각 학생은 **본인 Repository에 대한 수정(Write) 권한**을 받습니다.
 - `submissions`는 등록 신청 전용입니다. 이곳에 코드를 올리지 마세요.
 
@@ -57,8 +57,8 @@ rita-codespace/
 **Git 명령어 사용**
 
 ```bash
-git clone https://github.com/rita-codespace/phase1-<본인 GitHub ID>.git
-cd phase1-<본인 GitHub ID>
+git clone https://github.com/rita-codespace/<본인 GitHub ID>-<저장소 이름>.git
+cd <본인 GitHub ID>-<저장소 이름>
 
 # 프로젝트 파일을 이 폴더에 넣은 뒤
 git add .
